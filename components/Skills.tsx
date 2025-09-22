@@ -2,7 +2,7 @@ import { skills } from "@/utils/data";
 
 export default function Skills() {
   return (
-    <div className="w-full my-8">
+    <div className="w-full my-4">
       <h1 className="text-white text-xl font-bold mb-2">Skills</h1>
       <div className="flex gap-y-1 gap-1 flex-wrap w-full">
         {skills.map((skill, idx) => (
