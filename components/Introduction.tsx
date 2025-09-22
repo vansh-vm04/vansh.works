@@ -6,13 +6,13 @@ import Resume from "./icons/Resume";
 
 export default function Introduction() {
   return (
-    <div className="flex justify-center gap-6 items-center">
+    <div className="flex justify-center gap-6 items-center my-4">
       <div className="flex flex-col w-full">
         <h1 className="text-white text-2xl font-bold mb-1">Vansh Morwani</h1>
         <p className="text-gray-400 leading-tight text-pretty font-mono text-sm">
-          Full Stack Developer specializing in backend development, dedicated to
-          creating scalable, efficient and robust systems. Passionate about
-          learning and building innovative solutions.
+          I’m a Full Stack Developer with a strong focus on backend development.
+          I enjoy building impactful projects, and outside of coding, I spend
+          time reading, playing chess, or hanging out with friends.
         </p>
         <div className="flex items-center gap-2 mt-2">
           <Github />
