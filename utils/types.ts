@@ -3,4 +3,6 @@ export interface IProject {
   description: string;
   live: string;
   github: string;
+  skills: string[];
+  featured:boolean
 }
