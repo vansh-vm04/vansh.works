@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -10,4 +9,23 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+
+.book-slide {
+  width: max-content;
+  animation: slide 30s linear infinite;
+}
+
+.book-slide:hover {
+  animation-play-state: paused;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
