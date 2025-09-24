@@ -2,7 +2,7 @@ import { links } from "@/utils/data";
 
 export default function Resume() {
   return (
-    <a target="_blank" href={links.resume} className="w-8 h-8 flex items-center justify-center group p-1 border-[0.5px] rounded-md border-gray-700 hover:bg-gray-700 hover:cursor-pointer">
+    <a target="_blank" href={links.resume} className="w-8 h-8 flex items-center justify-center group p-1 border-[0.5px] rounded-md border-zinc-700 hover:bg-zinc-700 hover:cursor-pointer">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         x="0px"

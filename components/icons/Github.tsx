@@ -2,7 +2,7 @@ import { links } from "@/utils/data";
 
 export default function Github() {
   return (
-    <a target="_blank" href={links.github} className="w-8 h-8 flex items-center justify-center group p-1 border-[0.5px] rounded-md border-gray-700 hover:bg-gray-700 hover:cursor-pointer">
+    <a target="_blank" href={links.github} className="w-8 h-8 flex items-center justify-center group p-1 border-[0.5px] rounded-md border-zinc-700 hover:bg-zinc-700 hover:cursor-pointer">
       <svg
         className="fill-gray-400 size-5 group-hover:fill-white"
         xmlns="http://www.w3.org/2000/svg"
