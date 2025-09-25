@@ -12,7 +12,7 @@ export default function Projects() {
     setFeatured(featuredProjects);
   }, []);
   return (
-    <div className="my-4 w-full">
+    <section id="projects" className="my-4 w-full">
       <h1 className="text-white text-xl font-bold mb-2">Projects</h1>
       <div className="flex flex-col items-center w-full">
         {featured.map((project, idx) => (
@@ -46,6 +46,6 @@ export default function Projects() {
         ))}
         {featured !== projects && <Button title="View more" onClick={()=>setFeatured(projects)} />}
       </div>
-    </div>
+    </section>
   );
 }

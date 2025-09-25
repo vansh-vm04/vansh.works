@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function CurrentReads() {
   return (
-    <div className="w-full my-4">
+    <div id="reading" className="w-full my-4">
       <h1 className="text-white text-xl font-bold mb-2">What I’m Reading</h1>
       <div className="w-full h-fit overflow-hidden">
         <div
