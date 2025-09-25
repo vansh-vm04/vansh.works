@@ -11,10 +11,10 @@ export const links = {
 export const projects: IProject[] = [
   {
     name: "AI Summarizer",
-    description: "Summarize any transcripts in one click.",
+    description: "Summarize any video, audio or meeting transcripts in one click.",
     live: "https://easy-summary.vercel.app/",
     github: "https://github.com/vansh-vm04/AI-Summarizer",
-    skills: ["TypeScript", "Next.js", "Groq API"],
+    skills: ["TypeScript", "Next.js", "Express.js", "Groq API"],
     featured:true
   },
   {
@@ -23,7 +23,7 @@ export const projects: IProject[] = [
       "CRM dashboard to manage leads with role-based ownership, validation, and server-side filtering.",
     live: "https://e-leads.vercel.app",
     github: "https://github.com/vansh-vm04/e-Leads",
-    skills: ["Next.js", "TypeScript", "Zod", "NextAuth", "Tailwind CSS"],
+    skills: ["Next.js", "TypeScript", "Zod", "Prisma", "PostgreSQL"],
     featured:true
   },
   {
@@ -31,7 +31,7 @@ export const projects: IProject[] = [
     description: "Real-time chat app with WebSocket integration.",
     live: "https://wetalk-app.vercel.app/",
     github: "https://github.com/vansh-vm04/WeTalk",
-    skills: ["React", "Tailwind CSS", "Node.js", "WebSockets"],
+    skills: ["React", "TypeScript", "Node.js", "WebSockets"],
     featured:true
   },
   {
@@ -39,7 +39,7 @@ export const projects: IProject[] = [
     description: "All your youtube, tweet and blog links in one app.",
     live: "https://bundleup.vercel.app/",
     github: "https://github.com/vansh-vm04/bundleup",
-    skills: ["TypeScript", "Node.js", "React", "Tailwind CSS"],
+    skills: ["TypeScript", "Express.js", "React", "MongoDB"],
     featured:false
   },
   {
@@ -47,7 +47,7 @@ export const projects: IProject[] = [
     description: "Portfolio generator with customizable templates.",
     live: "https://profolio-app.vercel.app/",
     github: "https://github.com/vansh-vm04/profolio",
-    skills: ["React", "Tailwind CSS", "Node.js"],
+    skills: ["React", "Node.js", "Express.js", "MongoDB"],
     featured:false
   },
   {
@@ -58,7 +58,6 @@ export const projects: IProject[] = [
     skills: [
       "Next.js",
       "TypeScript",
-      "Tailwind CSS",
       "ShadCN",
       "Stream Video SDK",
     ],
