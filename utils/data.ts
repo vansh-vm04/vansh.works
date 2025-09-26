@@ -75,6 +75,9 @@ export const skills = [
 
   // Frontend Frameworks & Libraries
   "React.js / Next.js",
+  "Angular",
+  "Redux",
+  "Recoil",
   "Tailwind CSS",
 
   // Backend & APIs
@@ -84,6 +87,7 @@ export const skills = [
   "WebSockets",
   "MongoDB",
   "PostgreSQL",
+  "Redis",
   "Prisma",
 
   // DevOps & Deployment

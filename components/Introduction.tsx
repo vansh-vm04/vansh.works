@@ -9,7 +9,7 @@ export default function Introduction() {
     <section id="about" className="flex justify-center gap-6 items-center my-4">
       <div className="flex flex-col w-full">
         <h1 className="text-white text-2xl font-bold mb-1">Vansh Morwani</h1>
-        <p className="text-gray-400 leading-tight text-pretty font-mono text-sm">
+        <p className="text-zinc-400 leading-tight text-pretty font-mono text-sm">
           I’m a Full Stack Developer with a strong focus on backend development.
           I enjoy building impactful projects, and outside of coding, I spend
           time reading, playing chess, or hanging out with friends.
@@ -23,7 +23,7 @@ export default function Introduction() {
       </div>
       <div className="w-fit h-fit">
         <Image
-          className="rounded-md object-cover border-2 border-gray-600"
+          className="rounded-md object-cover border-2 border-zinc-500"
           height={144}
           width={144}
           alt="Vansh Morwani professional headshot 2025"
