@@ -1,21 +1,13 @@
-"use client";
-import { projects } from "@/utils/data";
+import { featuredProjects } from "@/utils/data";
 import LiveLink from "./icons/LiveLink";
-import { useEffect, useState } from "react";
-import { IProject } from "@/utils/types";
-import Button from "./ui/Button";
+import Link from "next/link";
 
 export default function Projects() {
-  const [featured, setFeatured] = useState<IProject[]>([]);
-  useEffect(() => {
-    const featuredProjects = projects.filter((p) => p.featured);
-    setFeatured(featuredProjects);
-  }, []);
   return (
     <section id="projects" className="my-4 w-full">
       <h1 className="text-white text-xl font-bold mb-2">Projects</h1>
       <div className="flex flex-col items-center w-full">
-        {featured.map((project, idx) => (
+        {featuredProjects.map((project, idx) => (
           <div
             key={idx}
             className="flex flex-col w-full bg-zinc-800 rounded-md px-4 py-4 justify-between my-1"
@@ -44,7 +36,12 @@ export default function Projects() {
             </div>
           </div>
         ))}
-        {featured !== projects && <Button title="View more" onClick={()=>setFeatured(projects)} />}
+        <Link
+          href="/projects"
+          className="bg-zinc-700 my-2 font-semibold hover:cursor-pointer hover:bg-zinc-600 text-gray-300 text-sm py-1 px-2 rounded-md"
+        >
+          View more
+        </Link>
       </div>
     </section>
   );
