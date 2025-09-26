@@ -2,7 +2,7 @@ import { IProject } from "./types";
 
 export const links = {
   github: "https://github.com/vansh-vm04",
-  linkedin: "https://www.linkedin.com/in/vansh027/",
+  linkedin: "https://www.linkedin.com/in/vanshmorwani",
   mail: "mailto:contact@vansh.works",
   resume:
     "https://drive.google.com/file/d/1Oi5-eQyS2wuxssXgrPspljXgKEy41V7M/view?usp=sharing",
@@ -64,6 +64,8 @@ export const projects: IProject[] = [
     featured:false
   },
 ];
+
+export const featuredProjects = projects.filter(project => project.featured === true);
 
 export const skills = [
   //Languages
