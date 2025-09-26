@@ -1,4 +1,4 @@
-import { IProject } from "./types";
+import { IProject, IQuote } from "./types";
 
 export const links = {
   github: "https://github.com/vansh-vm04",
@@ -107,7 +107,7 @@ export const books = [
   "https://res.cloudinary.com/dhuql3iuv/image/upload/v1758558146/psychology-of-money_qszhp0.jpg"
 ]
 
-export const quotes = [
+export const quotes:IQuote[] = [
   { quote: "When something is important enough, you do it even if the odds are not in your favor.", author: "Elon Musk" },
   { quote: "Your most unhappy customers are your greatest source of learning.", author: "Bill Gates" },
   { quote: "Innovation distinguishes between a leader and a follower.", author: "Steve Jobs" },
