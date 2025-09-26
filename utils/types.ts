@@ -4,5 +4,10 @@ export interface IProject {
   live: string;
   github: string;
   skills: string[];
-  featured:boolean
+  featured: boolean;
+}
+
+export interface IQuote {
+  quote: string;
+  author: string;
 }
