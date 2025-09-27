@@ -38,7 +38,7 @@ export default function Projects() {
         ))}
         <Link
           href="/projects"
-          className="bg-zinc-700 my-2 font-semibold hover:cursor-pointer hover:bg-zinc-600 text-gray-300 text-sm py-1 px-2 rounded-md"
+          className="bg-zinc-700 my-2 font-semibold hover:cursor-pointer hover:bg-zinc-600 text-zinc-100 text-sm py-1 px-2 rounded-md"
         >
           View more
         </Link>
