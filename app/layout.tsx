@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Vansh Morwani",
   description: "Vansh Morwani | Full Stack Developer",
   icons: {
-    icon: "icon.png",
+    icon: "favicon.ico",
   },
   keywords: [
     "Vansh",
