@@ -5,9 +5,6 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://vansh.works'),
   title: "Vansh Morwani",
   description: "Vansh Morwani | Full Stack Developer",
-  icons: {
-    icon: "favicon.ico",
-  },
   keywords: [
     "Vansh",
     "Vansh Morwani",
