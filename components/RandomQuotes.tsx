@@ -1,5 +1,5 @@
 "use client";
-import { getRandomQuote } from "@/utils/data";
+import { getRandomQuote } from "@/utils/quotes";
 import { IQuote } from "@/utils/types";
 import { useEffect, useState } from "react";
 
