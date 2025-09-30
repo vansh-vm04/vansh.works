@@ -2,9 +2,12 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://vansh.works'),
+  metadataBase: new URL("https://vansh.works"),
   title: "Vansh Morwani",
   description: "Vansh Morwani | Full Stack Developer",
+  icons: {
+    icon: "/icon.ico",
+  },
   keywords: [
     "Vansh",
     "Vansh Morwani",
