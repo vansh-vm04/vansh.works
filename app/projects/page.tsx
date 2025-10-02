@@ -6,7 +6,7 @@ export default function Projects() {
   return (
     <section id="projects" className="my-4 w-full">
       <div className="w-full mb-8 flex">
-        <BackButton link="/" />
+        <BackButton link="/#projects" />
       </div>
       <h1 className="text-white text-xl font-bold mb-2">All Projects</h1>
       <div className="flex flex-col items-center w-full">

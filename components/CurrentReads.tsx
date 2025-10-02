@@ -7,12 +7,12 @@ export default function CurrentReads() {
       <h1 className="text-white text-xl font-bold mb-2">What I’m Reading</h1>
       <div className="w-full h-fit overflow-hidden">
         <div
-          className={`flex items-center gap-1 book-slide h-full hover:pause-scroll`}
+          className={`flex items-center gap-1 book-slide h-full hover:pause-scroll transform-3d transition-all`}
         >
           {books.concat(books).map((link, idx) => (
             <Image
               className="grayscale-100 hover:grayscale-0 h-42 w-full"
-              alt={`book ${idx + 1}`}
+              alt={`Vansh Morwani is reading book ${idx + 1}`}
               key={idx}
               height={176}
               width={144}
