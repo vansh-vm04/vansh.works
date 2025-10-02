@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   description: "Vansh Morwani | Full Stack Developer",
   icons: {
     icon: "/icon.ico",
+    apple:"/icon.ico"
   },
   keywords: [
     "Vansh",
