@@ -22,13 +22,17 @@ export default function Introduction() {
         </div>
       </div>
       <div className="w-fit h-fit">
-        <Image
-          className="rounded-md object-cover border-2 border-zinc-500"
-          height={144}
-          width={144}
-          alt="Vansh Morwani professional headshot 2025"
-          src={"/images/vansh-profile.jpg"}
-        ></Image>
+        <figure>
+          <Image
+            className="rounded-md object-cover border-2 border-zinc-500"
+            height={144}
+            width={144}
+            alt="Vansh Morwani"
+            src={"/images/vansh-morwani.webp"}
+            priority
+          />
+          <figcaption className="sr-only">Vansh Morwani | Full Stack Developer</figcaption>
+        </figure>
       </div>
     </section>
   );

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
+import { personSchema } from "@/utils/schema";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vansh.works"),
@@ -7,7 +9,7 @@ export const metadata: Metadata = {
   description: "Vansh Morwani | Full Stack Developer",
   icons: {
     icon: "/icon.ico",
-    apple:"/icon.ico"
+    apple: "/icon.ico",
   },
   keywords: [
     "Vansh",
@@ -50,6 +52,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`bg-zinc-900`}>
+      <head>
+        <Script id="person-schema" type="application/ld+json">
+          {JSON.stringify(personSchema)}
+        </Script>
+      </head>
       <body className={`antialiased`}>
         <main className="w-full h-full pt-16 min-h-screen max-w-2xl mx-auto my-1 px-4 py-4">
           {children}
