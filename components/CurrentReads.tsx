@@ -12,7 +12,7 @@ export default function CurrentReads() {
           {books.concat(books).map((link, idx) => (
             <Image
               className="grayscale-100 hover:grayscale-0 h-42 w-full"
-              alt={`Vansh Morwani is reading book ${idx + 1}`}
+              alt={`reading book ${idx + 1}`}
               key={idx}
               height={176}
               width={144}
