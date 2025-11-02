@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
 import { personSchema } from "@/utils/schema";
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vansh.works"),
@@ -61,6 +62,7 @@ export default function RootLayout({
         <main className="w-full h-full pt-16 min-h-screen max-w-2xl mx-auto my-1 px-4 py-4">
           {children}
         </main>
+        <Analytics />
       </body>
     </html>
   );
