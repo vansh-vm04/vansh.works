@@ -1,4 +1,4 @@
-import { IProject } from "./types";
+import { IProject, ISkill } from "./types";
 
 export const links = {
   github: "https://github.com/vansh-vm04",
@@ -49,53 +49,97 @@ export const projects: IProject[] = [
     github: "https://github.com/vansh-vm04/profolio",
     skills: ["React", "Node.js", "Express.js", "MongoDB"],
     featured:false
-  },
-  {
-    name: "VidCell",
-    description: "Video conferencing app with Stream Video SDK.",
-    live: "https://vidcell.vercel.app/",
-    github: "https://github.com/vansh-vm04/vidcell",
-    skills: [
-      "Next.js",
-      "TypeScript",
-      "ShadCN",
-      "Stream Video SDK",
-    ],
-    featured:false
-  },
+  }
 ];
 
 export const featuredProjects = projects.filter(project => project.featured === true);
 
-export const skills = [
-  //Languages
-  "TypeScript",
-  "JavaScript",
-  "Java",
+export const skills:ISkill[] = [
+  // Languages
+  {
+    name: "TypeScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+  },
+  {
+    name: "JavaScript",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+  },
+  {
+    name: "Java",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+  },
 
-  // Frontend Frameworks & Libraries
-  "React.js / Next.js",
-  "Angular",
-  "Redux",
-  "Recoil",
-  "Tailwind CSS",
+  // Frontend
+  {
+    name: "React.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+  },
+  {
+    name: "Next.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"
+  },
+  {
+    name: "Angular",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+  },
+  {
+    name: "Redux",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+  },
 
   // Backend & APIs
-  "Node.js",
-  "Express.js",
-  "Rest APIs",
-  "WebSockets",
-  "MongoDB",
-  "PostgreSQL",
-  "Redis",
-  "Prisma",
+  {
+    name: "Node.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+  },
+  {
+    name: "Express.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+  },
+  {
+    name: "WebSockets",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg"
+  },
+  {
+    name: "MongoDB",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+  },
+  {
+    name: "PostgreSQL",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+  },
+  {
+    name: "Redis",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg"
+  },
+  {
+    name: "Prisma",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prisma/prisma-original.svg"
+  },
 
-  // DevOps & Deployment
-  "Docker",
+  // DevOps
+  {
+    name: "Docker",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+  },
 
   // Tools & Others
-  "Git / GitHub",
-  "Postman",
+  {
+    name: "Git",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+  },
+  {
+    name: "GitHub",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+  },
+  {
+    name: "Postman",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg"
+  }
 ];
 
 export const books = [

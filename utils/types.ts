@@ -11,3 +11,8 @@ export interface IQuote {
   quote: string;
   author: string;
 }
+
+export interface ISkill {
+  name: string;
+  icon: string;
+}

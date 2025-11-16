@@ -5,6 +5,12 @@ const nextConfig: NextConfig = {
     remotePatterns:[
       {
         hostname:"res.cloudinary.com"
+      },
+      {
+        hostname:"cdn.simpleicons.org"
+      },
+      {
+        hostname:"skillicons.dev"
       }
     ]
   }

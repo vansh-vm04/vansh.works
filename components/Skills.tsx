@@ -1,4 +1,5 @@
 import { skills } from "@/utils/data";
+import Image from "next/image";
 
 export default function Skills() {
   return (
@@ -6,12 +7,21 @@ export default function Skills() {
       <h1 className="text-white text-xl font-bold mb-2">Skills</h1>
       <div className="flex gap-y-1 gap-1 flex-wrap w-full">
         {skills.map((skill, idx) => (
-          <span
-            className="text-black font-semibold font-mono text-xs bg-gray-300 inline-flex items-center px-2 py-0.5 rounded-md"
+          <div
+            className="bg-zinc-800 flex gap-2 justify-center items-center px-2 py-1 rounded-md"
             key={idx}
           >
-            {skill}
-          </span>
+            <Image
+              className="size-5"
+              width={20}
+              height={20}
+              alt={skill.name}
+              src={skill.icon}
+            />
+            <span className="text-white font-mono text-xs">
+              {skill.name}
+            </span>
+          </div>
         ))}
       </div>
     </section>
