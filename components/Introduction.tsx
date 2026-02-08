@@ -28,7 +28,7 @@ export default function Introduction() {
             height={144}
             width={144}
             alt="Vansh Morwani"
-            src={"/images/vansh-morwani.webp"}
+            src={"/images/vansh-morwani.jpg"}
             priority
           />
           <figcaption className="sr-only">Vansh Morwani | Full Stack Developer</figcaption>

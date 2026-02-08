@@ -5,6 +5,7 @@ export interface IProject {
   github: string;
   skills: string[];
   featured: boolean;
+  images?: string[];
 }
 
 export interface IQuote {

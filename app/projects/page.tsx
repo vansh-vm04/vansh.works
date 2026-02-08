@@ -1,43 +1,17 @@
 import { projects } from "@/utils/data";
-import LiveLink from "@/components/icons/LiveLink";
+import ProjectCard from "@/components/ProjectCard";
 import { BackButton } from "@/components/ui/BackButton";
 
 export default function Projects() {
   return (
     <section id="projects" className="my-4 w-full">
-      <div className="w-full mb-8 flex">
+      <div className="w-full mb-6 flex">
         <BackButton link="/#projects" />
       </div>
-      <h1 className="text-white text-xl font-bold mb-2">All Projects</h1>
-      <div className="flex flex-col items-center w-full">
+      <h1 className="text-white text-xl font-bold mb-4">All Projects</h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {projects.map((project, idx) => (
-          <div
-            key={idx}
-            className="flex flex-col w-full bg-zinc-800 rounded-md px-4 py-4 justify-between my-1"
-          >
-            <div className="mb-4">
-              <a
-                target="_blank"
-                className="text-white hover:underline font-semibold text-md"
-                href={project.live}
-              >
-                {project.name} <LiveLink />
-              </a>
-              <p className="text-xs text-zinc-400 font-mono text-pretty truncate">
-                {project.description}
-              </p>
-            </div>
-            <div className="flex gap-y-1 gap-1 flex-wrap w-full">
-              {project.skills.map((skill, idx) => (
-                <span
-                  className="text-black font-semibold font-mono text-xs bg-gray-400 inline-flex items-center px-2 rounded-md"
-                  key={idx}
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-          </div>
+          <ProjectCard key={idx} project={project} />
         ))}
       </div>
     </section>

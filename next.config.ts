@@ -11,8 +11,13 @@ const nextConfig: NextConfig = {
       },
       {
         hostname:"skillicons.dev"
+      },
+      {
+        hostname:"cdn.jsdelivr.net"
       }
-    ]
+    ],
+
+    qualities: [50, 70, 100],
   }
   /* config options here */
 };
