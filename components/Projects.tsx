@@ -16,7 +16,7 @@ export default function Projects() {
       <div className="flex justify-center mt-4">
         <Link
           href="/projects"
-          className="bg-zinc-800 border border-zinc-700 hover:bg-zinc-700 hover:border-zinc-600 text-zinc-200 text-sm font-medium py-2 px-5 rounded-lg transition-all duration-200"
+          className="bg-gradient-to-b from-zinc-800/70 to-zinc-900/95 border border-zinc-800 hover:border-zinc-700 text-zinc-200 text-sm font-medium py-2 px-5 rounded-lg transition-all duration-200 shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]"
         >
           View all projects
         </Link>

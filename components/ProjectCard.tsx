@@ -104,7 +104,7 @@ export default function ProjectCard({ project }: { project: IProject }) {
   const images = project.images || [];
 
   return (
-    <div className="group relative flex flex-col bg-zinc-900 border border-zinc-800 rounded-xl hover:border-zinc-700 transition-all duration-300 hover:shadow-lg hover:shadow-black/20 overflow-visible">
+    <div className="group relative flex flex-col bg-gradient-to-b from-zinc-800/70 to-zinc-900/95 border border-zinc-800 rounded-xl hover:border-zinc-700 transition-all duration-300 hover:shadow-md hover:shadow-black/20 overflow-visible shadow-[inset_0_1px_0_rgba(255,255,255,0.04)]">
       {/* Image Slider */}
       <div className="p-3 pb-0">
         <ImageSlider images={images} name={project.name} />
