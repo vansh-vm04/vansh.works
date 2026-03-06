@@ -1,4 +1,4 @@
-import { IProject, ISkill } from "./types";
+import { IExperience, IProject, ISkill } from "./types";
 
 export const links = {
   github: "https://github.com/vansh-vm04",
@@ -86,7 +86,7 @@ export const projects: IProject[] = [
       "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565075/Screenshot_2026-02-08_204502_hz8usb.png",
       "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565074/Screenshot_2026-02-08_204541_rkrjxr.png",
       "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565074/Screenshot_2026-02-08_204605_vkbx7q.png",
-      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565073/Screenshot_2026-02-08_204646_ylg41z.png"
+      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565073/Screenshot_2026-02-08_204646_ylg41z.png",
     ],
   },
 ];
@@ -189,5 +189,21 @@ export const books = [
   "https://res.cloudinary.com/dhuql3iuv/image/upload/v1758554452/courage_iavudn.png",
   "https://res.cloudinary.com/dhuql3iuv/image/upload/v1758554451/do-it-today_xzg5oe.jpg",
   "https://res.cloudinary.com/dhuql3iuv/image/upload/v1758550876/attitude_nz7i56.jpg",
-  "https://res.cloudinary.com/dhuql3iuv/image/upload/v1758558146/psychology-of-money_qszhp0.jpg"
-]
+  "https://res.cloudinary.com/dhuql3iuv/image/upload/v1758558146/psychology-of-money_qszhp0.jpg",
+];
+
+export const experiences: IExperience[] = [
+  {
+    company: "BetaTest Solutions",
+    role: "Software Engineer Intern",
+    type: "Internship",
+    duration: "Nov 2025 – Present",
+    location: "Bangalore, India (Remote)",
+    logo: "https://res.cloudinary.com/dhuql3iuv/image/upload/v1772828265/Screenshot_2026-03-07_014549_acf8kk.png",
+    responsibilities: [
+      "Built and maintained 3+ production-grade web and mobile applications using React.js and React Native.",
+      "Designed and integrated 10+ RESTful APIs to enable secure and scalable data communication between frontend and backend.",
+      "Collaborated with cross-functional teams to deliver features faster using best coding and version control practices.",
+    ],
+  },
+];

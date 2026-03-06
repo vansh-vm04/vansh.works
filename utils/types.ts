@@ -17,3 +17,13 @@ export interface ISkill {
   name: string;
   icon: string;
 }
+
+export interface IExperience {
+  company: string;
+  role: string;
+  type: string;
+  duration: string;
+  location: string;
+  logo: string;
+  responsibilities: string[];
+}
