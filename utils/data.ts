@@ -10,16 +10,18 @@ export const links = {
 
 export const projects: IProject[] = [
   {
-    name: "AI Summarizer",
-    description:
-      "Summarize any video, audio or meeting transcripts in one click.",
-    live: "https://easy-summary.vercel.app/",
-    github: "https://github.com/vansh-vm04/AI-Summarizer",
-    skills: ["TypeScript", "Next.js", "Express.js", "Groq API"],
+    name: "Profolio",
+    description: "Portfolio generator with customizable templates.",
+    live: "https://profolio-app.vercel.app/",
+    github: "https://github.com/vansh-vm04/profolio",
+    skills: ["React", "Node.js", "Express.js", "MongoDB"],
     featured: true,
     images: [
-      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565099/Screenshot_2026-02-08_204208_e3fhd6.png",
-      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565258/Screenshot_2026-02-08_211041_uttia5.png",
+      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565075/Screenshot_2026-02-08_210131_ssyir8.png",
+      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565074/Screenshot_2026-02-08_210154_pdhtuw.png",
+      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565074/Screenshot_2026-02-08_210222_dxhzhj.png",
+      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565074/Screenshot_2026-02-08_210307_np7uem.png",
+      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565073/Screenshot_2026-02-08_210348_yf1wq1.png",
     ],
   },
   {
@@ -47,6 +49,19 @@ export const projects: IProject[] = [
     ],
   },
   {
+    name: "AI Summarizer",
+    description:
+      "Summarize any video, audio or meeting transcripts in one click.",
+    live: "https://easy-summary.vercel.app/",
+    github: "https://github.com/vansh-vm04/AI-Summarizer",
+    skills: ["TypeScript", "Next.js", "Express.js", "Groq API"],
+    featured: true,
+    images: [
+      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565099/Screenshot_2026-02-08_204208_e3fhd6.png",
+      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565258/Screenshot_2026-02-08_211041_uttia5.png",
+    ],
+  },
+  {
     name: "BundleUp",
     description: "All your youtube, tweet and blog links in one app.",
     live: "https://bundleup.vercel.app/",
@@ -57,21 +72,6 @@ export const projects: IProject[] = [
       "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565073/Screenshot_2026-02-08_210603_vrfr7q.png",
       "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565073/Screenshot_2026-02-08_210520_btkxjz.png",
       "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565073/Screenshot_2026-02-08_210629_tc9sqf.png",
-    ],
-  },
-  {
-    name: "Profolio",
-    description: "Portfolio generator with customizable templates.",
-    live: "https://profolio-app.vercel.app/",
-    github: "https://github.com/vansh-vm04/profolio",
-    skills: ["React", "Node.js", "Express.js", "MongoDB"],
-    featured: true,
-    images: [
-      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565075/Screenshot_2026-02-08_210131_ssyir8.png",
-      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565074/Screenshot_2026-02-08_210154_pdhtuw.png",
-      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565074/Screenshot_2026-02-08_210222_dxhzhj.png",
-      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565074/Screenshot_2026-02-08_210307_np7uem.png",
-      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565073/Screenshot_2026-02-08_210348_yf1wq1.png",
     ],
   },
   {

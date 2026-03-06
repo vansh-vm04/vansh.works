@@ -1,5 +1,4 @@
 import Contact from "@/components/Contact";
-import CurrentReads from "@/components/CurrentReads";
 import Introduction from "@/components/Introduction";
 import Projects from "@/components/Projects";
 import RandomQuotes from "@/components/RandomQuotes";
@@ -10,7 +9,6 @@ export default function Home() {
     <Introduction/>
     <Skills/>
     <Projects/>
-    <CurrentReads/>
     <RandomQuotes/>
     <Contact/>
   </div>;
