@@ -21,7 +21,6 @@ export interface ISkill {
 export interface IExperience {
   company: string;
   role: string;
-  type: string;
   duration: string;
   location: string;
   logo: string;

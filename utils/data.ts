@@ -172,7 +172,6 @@ export const experiences: IExperience[] = [
   {
     company: "BetaTest Solutions",
     role: "Software Engineer Intern",
-    type: "Internship",
     duration: "Nov 2025 – Present",
     location: "Bangalore, India (Remote)",
     logo: "https://res.cloudinary.com/dhuql3iuv/image/upload/v1772828265/Screenshot_2026-03-07_014549_acf8kk.png",

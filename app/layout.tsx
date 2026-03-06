@@ -3,6 +3,7 @@ import Script from "next/script";
 import "./globals.css";
 import { personSchema } from "@/utils/schema";
 import { Analytics } from "@vercel/analytics/next";
+import SmoothScroll from "@/components/SmoothScroll";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vansh.works"),
@@ -52,16 +53,18 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`bg-zinc-900`}>
+    <html lang="en">
       <head>
         <Script id="person-schema" type="application/ld+json">
           {JSON.stringify(personSchema)}
         </Script>
       </head>
       <body className={`antialiased`}>
-        <main className="w-full h-full pt-16 min-h-screen max-w-2xl mx-auto my-1 px-4 py-4">
-          {children}
-        </main>
+        <SmoothScroll>
+          <main className="w-full h-full pt-16 min-h-screen max-w-2xl mx-auto my-1 px-4 py-4">
+            {children}
+          </main>
+        </SmoothScroll>
         <Analytics />
       </body>
     </html>
