@@ -4,6 +4,7 @@ import "./globals.css";
 import { personSchema } from "@/utils/schema";
 import { Analytics } from "@vercel/analytics/next";
 import SmoothScroll from "@/components/SmoothScroll";
+import LoadingScreen from "@/components/LoadingScreen";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://vansh.works"),
@@ -60,11 +61,13 @@ export default function RootLayout({
         </Script>
       </head>
       <body className={`antialiased`}>
-        <SmoothScroll>
-          <main className="w-full h-full pt-16 min-h-screen max-w-2xl mx-auto my-1 px-4 py-4">
-            {children}
-          </main>
-        </SmoothScroll>
+        <LoadingScreen>
+          <SmoothScroll>
+            <main className="w-full h-full pt-16 min-h-screen max-w-2xl mx-auto my-1 px-4 py-4">
+              {children}
+            </main>
+          </SmoothScroll>
+        </LoadingScreen>
         <Analytics />
       </body>
     </html>

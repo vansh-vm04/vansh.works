@@ -6,7 +6,7 @@ import Resume from "./icons/Resume";
 
 export default function Introduction() {
   return (
-    <section id="about" className="flex justify-center gap-6 items-center my-4">
+    <section id="about" className="flex justify-center gap-6 items-center my-6">
       <div className="flex flex-col w-full">
         <h1 className="text-white text-2xl font-bold mb-1">Vansh Morwani</h1>
         <p className="text-zinc-400 leading-tight text-pretty font-mono text-sm">

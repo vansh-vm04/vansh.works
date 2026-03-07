@@ -9,7 +9,7 @@ export default function RandomQuotes() {
     setQuote(getRandomQuote());
   }, []);
   return (
-    <section id="quotes" className="w-full my-4">
+    <section id="quotes" className="w-full my-6">
       <h1 className="text-white text-xl font-bold mb-2">Quote of the day</h1>
       <div className="w-full flex flex-col py-6 px-10 items-center justify-center border-1 border-zinc-700">
         <p className="text-sm text-zinc-300 font-mono text-pretty">

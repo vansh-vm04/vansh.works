@@ -17,18 +17,18 @@ export default function Experience() {
   };
 
   return (
-    <section id="experience" className="w-full my-4">
+    <section id="experience" className="w-full my-6">
       <h1 className="text-white text-xl font-bold mb-2">Work Experience</h1>
       <div className="flex flex-col gap-3">
         {experiences.map((exp, index) => (
           <div
             key={index}
-            className="py-2 transition-all cursor-pointer md:cursor-default"
+            className="transition-all cursor-pointer md:cursor-default"
             onMouseEnter={() => setHoveredIndex(index)}
             onMouseLeave={() => setHoveredIndex(null)}
             onClick={() => toggleExpand(index)}
           >
-            <div className="flex items-start gap-3 md:items-center md:gap-4">
+            <div className="flex items-start gap-2 md:items-center md:gap-3">
               <Image
                 src={exp.logo}
                 alt={exp.company}
@@ -42,7 +42,7 @@ export default function Experience() {
                     <h2 className="text-white font-semibold text-sm md:text-base">{exp.company}</h2>
                     <p className="text-zinc-400 font-mono text-xs md:text-sm">{exp.role}</p>
                   </div>
-                  <div className="text-right shrink-0">
+                  <div className="text-right shrink-0 items-start flex">
                     <span className="text-zinc-300 font-mono text-[10px] md:text-sm whitespace-nowrap">{exp.duration}</span>
                   </div>
                 </div>
