@@ -9,7 +9,7 @@ export default function Introduction() {
     <section id="about" className="flex justify-center gap-6 items-center my-6">
       <div className="flex flex-col w-full">
         <h1 className="text-white text-2xl font-bold mb-1">Hey👋, I’m Vansh</h1>
-        <p className="text-zinc-400 leading-tight text-pretty font-mono text-[0.9rem]">
+        <p className="text-zinc-400 leading-tight text-pretty font-mono text-[0.9rem] max-sm:text-sm">
           a full stack developer with a strong focus on backend development.
           i enjoy building impactful projects, and outside of coding, i spend
           time reading, playing chess, or hanging out with friends.
