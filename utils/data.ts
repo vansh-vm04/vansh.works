@@ -176,9 +176,10 @@ export const experiences: IExperience[] = [
     location: "Bangalore, India (Remote)",
     logo: "https://res.cloudinary.com/dhuql3iuv/image/upload/v1772828265/Screenshot_2026-03-07_014549_acf8kk.png",
     responsibilities: [
-      "Built and maintained 3+ production-grade web and mobile applications using React.js and React Native.",
-      "Designed and integrated 10+ RESTful APIs to enable secure and scalable data communication between frontend and backend.",
-      "Collaborated with cross-functional teams to deliver features faster using best coding and version control practices.",
+      "Built UI components for a mobile application using React Native, focusing on reusable components and responsive layouts.",
+      "Integrated backend APIs using NestJS to enable communication between frontend and backend services.",
+      "Developed frontend features using React, improving functionality and user experience of the web application.",
+      "Integrated third-party APIs to support additional application features."
     ],
   },
 ];
