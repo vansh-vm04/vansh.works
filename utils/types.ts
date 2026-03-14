@@ -26,3 +26,11 @@ export interface IExperience {
   logo: string;
   responsibilities: string[];
 }
+
+export interface IEducation {
+  institution: string;
+  degree: string;
+  duration: string;
+  location: string;
+  logo: string;
+}

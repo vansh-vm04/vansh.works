@@ -1,4 +1,4 @@
-import { IExperience, IProject, ISkill } from "./types";
+import { IEducation, IExperience, IProject, ISkill } from "./types";
 
 export const links = {
   github: "https://github.com/vansh-vm04",
@@ -180,5 +180,15 @@ export const experiences: IExperience[] = [
       "Designed and integrated 10+ RESTful APIs to enable secure and scalable data communication between frontend and backend.",
       "Collaborated with cross-functional teams to deliver features faster using best coding and version control practices.",
     ],
+  },
+];
+
+export const educations: IEducation[] = [
+  {
+    institution: "JECRC University, Jaipur",
+    degree: "B.Tech. in Computer Science and Engineering",
+    duration: "2022 – 2026",
+    location: "Jaipur, Rajasthan",
+    logo: "/images/jecrc.png",
   },
 ];
