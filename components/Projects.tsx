@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Projects() {
   return (
     <section id="projects" className="my-6 w-full">
-      <h1 className="text-white text-xl font-bold mb-4">
+      <h1 className="text-white text-lg font-medium mb-4">
         Some of the projects I&apos;ve built recently
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

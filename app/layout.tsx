@@ -63,7 +63,7 @@ export default function RootLayout({
       <body className={`antialiased`}>
         <LoadingScreen>
           <SmoothScroll>
-            <main className="w-full h-full pt-16 min-h-screen max-w-2xl mx-auto my-1 px-4 py-4">
+            <main className="w-full h-full pt-4 min-h-screen max-w-2xl mx-auto my-1 px-4 py-4 md:pt-16">
               {children}
             </main>
           </SmoothScroll>

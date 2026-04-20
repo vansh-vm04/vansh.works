@@ -22,16 +22,23 @@ export default async function GithubActivity() {
   const { totalCommits, filteredData } = transformData(data.contributions);
 
   return (
-    <Calendar
-      weekStart={0}
-      labels={defaultLabels}
-      data={filteredData}
-      hideMonthLabels
-      totalCount={totalCommits}
-      theme={gitHubTheme}
-      colorScheme={"light"}
-      maxLevel={4}
-    />
+    <section id="github-activity" className="w-full my-6">
+      <h1 className="text-white text-lg font-medium mb-2">Github Activity</h1>
+      <Calendar
+        weekStart={0}
+        labels={defaultLabels}
+        data={filteredData}
+        hideMonthLabels
+        totalCount={totalCommits}
+        theme={gitHubTheme}
+        colorScheme={"dark"}
+        maxLevel={4}
+        blockSize={9.66}
+        blockMargin={2}
+        style={{ color: "white", fontFamily: "monospace" }}
+        fontSize={12}
+      />
+    </section>
   );
 }
 
@@ -41,7 +48,7 @@ const defaultLabels = {
 
 const gitHubTheme: ThemeInput = {
   light: ["#ebedf0", "#9be9a8", "#40c463", "#30a14e", "#216e39"],
-  dark: ["#161b22", "#0e4429", "#006d32", "#26a641", "#39d353"],
+  dark: ["#1b1f24", "#0e4429", "#006d32", "#26a641", "#39d353"],
 };
 
 const DAYS_IN_WEEKS = 7;
