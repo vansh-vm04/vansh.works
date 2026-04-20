@@ -11,7 +11,8 @@ html {
   scrollbar-width: thin;
 }
 
-html.lenis, html.lenis body {
+html.lenis,
+html.lenis body {
   height: auto;
 }
 
@@ -33,9 +34,17 @@ html.lenis, html.lenis body {
 
 body {
   background: #09090b;
-  background-image: 
-    radial-gradient(ellipse 80% 50% at 50% -20%, rgba(120, 119, 198, 0.15), transparent),
-    radial-gradient(ellipse 60% 40% at 100% 100%, rgba(59, 130, 246, 0.08), transparent);
+  background-image:
+    radial-gradient(
+      ellipse 80% 50% at 50% -20%,
+      rgba(120, 119, 198, 0.15),
+      transparent
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 100% 100%,
+      rgba(59, 130, 246, 0.08),
+      transparent
+    );
   min-height: 100vh;
 }
 
@@ -54,5 +63,27 @@ body {
   }
   100% {
     transform: translateX(-50%);
+  }
+}
+
+.github-calendar-wrapper rect {
+  transition: all 0.2s ease;
+}
+
+.github-calendar-wrapper rect:hover {
+  filter: brightness(2);
+}
+
+.github-calendar-wrapper .react-activity-calendar__count {
+  font-size: 12px;
+  @media screen and (max-width: 768px) {
+    font-size: 8px;
+  }
+}
+
+.github-calendar-wrapper .react-activity-calendar__legend-colors {
+  font-size: 12px;
+  @media screen and (max-width: 768px) {
+    font-size: 8px;
   }
 }

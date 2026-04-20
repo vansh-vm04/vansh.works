@@ -24,6 +24,7 @@ export default async function GithubActivity() {
   return (
     <section id="github-activity" className="w-full my-6">
       <h1 className="text-white text-lg font-medium mb-2">Github Activity</h1>
+      <div className="github-calendar-wrapper">
       <Calendar
         weekStart={0}
         labels={defaultLabels}
@@ -36,8 +37,8 @@ export default async function GithubActivity() {
         blockSize={9.66}
         blockMargin={2}
         style={{ color: "white", fontFamily: "monospace" }}
-        fontSize={12}
       />
+      </div>
     </section>
   );
 }
