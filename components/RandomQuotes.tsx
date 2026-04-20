@@ -26,10 +26,10 @@ export default function RandomQuotes() {
           <span className="font-serif text-4xl leading-none text-zinc-500">
             &ldquo;
           </span>
-          <p className="max-w-3xl text-sm sm:text-base text-zinc-200 font-serif leading-relaxed text-pretty italic">
+          <p className="max-w-2xl text-sm sm:text-base text-zinc-200 font-serif leading-relaxed text-pretty italic">
             {quote?.quote}
           </p>
-          <p className="mt-4 text-xs sm:text-sm text-zinc-400 font-mono tracking-wide">
+          <p className="mt-4 text-xs sm:text-sm text-zinc-400 font-serif tracking-wide italic">
             ~ {quote?.author}
           </p>
         </div>

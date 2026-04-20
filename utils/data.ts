@@ -179,7 +179,7 @@ export const experiences: IExperience[] = [
       "Built UI components for a mobile application using React Native, focusing on reusable components and responsive layouts.",
       "Integrated backend APIs using NestJS to enable communication between frontend and backend services.",
       "Developed frontend features using React, improving functionality and user experience of the web application.",
-      "Integrated third-party APIs to support additional application features."
+      "Integrated third-party APIs to support additional application features.",
     ],
   },
 ];
@@ -191,5 +191,14 @@ export const educations: IEducation[] = [
     duration: "2022 – 2026",
     location: "Jaipur, Rajasthan",
     logo: "/images/jecrc.png",
+  },
+];
+
+export const openSourceContributions = [
+  {
+    project: "NestJS Documentation",
+    description: "Contributed to the official NestJS documentation repository",
+    prLink: "https://github.com/nestjs/docs.nestjs.com/pull/3400",
+    prNumber: 3400,
   },
 ];

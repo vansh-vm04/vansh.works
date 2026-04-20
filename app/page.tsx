@@ -3,6 +3,7 @@ import Education from "@/components/Education";
 import Experience from "@/components/Experience";
 import GithubActivity from "@/components/GithubActivity";
 import Introduction from "@/components/Introduction";
+import OpenSourceContributions from "@/components/OpenSourceContributions";
 import Projects from "@/components/Projects";
 import RandomQuotes from "@/components/RandomQuotes";
 import Skills from "@/components/Skills";
@@ -15,6 +16,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <GithubActivity />
+      <OpenSourceContributions />
       <Education />
       <RandomQuotes />
       <Contact />
