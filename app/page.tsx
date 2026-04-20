@@ -1,6 +1,7 @@
 import Contact from "@/components/Contact";
 import Education from "@/components/Education";
 import Experience from "@/components/Experience";
+import GithubActivity from "@/components/GithubActivity";
 import Introduction from "@/components/Introduction";
 import Projects from "@/components/Projects";
 import RandomQuotes from "@/components/RandomQuotes";
@@ -13,6 +14,7 @@ export default function Home() {
       <Experience />
       <Skills />
       <Projects />
+      <GithubActivity />
       <Education />
       <RandomQuotes />
       <Contact />
