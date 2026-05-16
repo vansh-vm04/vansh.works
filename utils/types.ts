@@ -18,6 +18,15 @@ export interface ISkill {
   icon: string;
 }
 
+export interface IOpenSourceContribution {
+  project: string;
+  description: string;
+  prLink: string;
+  prNumber: number;
+  repoIcon?: string;
+  repoLink?: string;
+}
+
 export interface IExperience {
   company: string;
   role: string;

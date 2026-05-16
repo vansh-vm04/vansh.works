@@ -1,4 +1,10 @@
-import { IEducation, IExperience, IProject, ISkill } from "./types";
+import {
+  IEducation,
+  IExperience,
+  IOpenSourceContribution,
+  IProject,
+  ISkill,
+} from "./types";
 
 export const links = {
   github: "https://github.com/vansh-vm04",
@@ -210,11 +216,13 @@ export const educations: IEducation[] = [
   },
 ];
 
-export const openSourceContributions = [
+export const openSourceContributions: IOpenSourceContribution[] = [
   {
     project: "NestJS Documentation",
     description: "Contributed to the official NestJS documentation repository",
     prLink: "https://github.com/nestjs/docs.nestjs.com/pull/3400",
     prNumber: 3400,
+    repoIcon: "https://github.com/nestjs.png?size=80",
+    repoLink: "https://github.com/nestjs/docs.nestjs.com",
   },
 ];

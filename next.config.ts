@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
         hostname:"res.cloudinary.com"
       },
       {
+        hostname:"github.com"
+      },
+      {
         hostname:"cdn.simpleicons.org"
       },
       {
