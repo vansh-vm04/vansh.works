@@ -8,7 +8,7 @@ export default function Projects() {
       <h1 className="text-white text-lg font-medium mb-4">
         Some of the projects I&apos;ve built recently
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 gap-4">
         {featuredProjects.map((project, idx) => (
           <ProjectCard key={idx} project={project} />
         ))}

@@ -10,6 +10,18 @@ export const links = {
 
 export const projects: IProject[] = [
   {
+    name: "DayONE (In Progress)",
+    description:
+      "All-in-one productivity app for tasks, habits, notes, and reminders.",
+    live: "https://github.com/vansh-vm04/productivity-app",
+    github: "https://github.com/vansh-vm04/productivity-app",
+    skills: ["React Native", "Expo", "TypeScript", "SQLite"],
+    featured: true,
+    images: [
+      "https://res.cloudinary.com/dhuql3iuv/image/upload/v1778965615/Gemini_Generated_Image_gn8cgrgn8cgrgn8c_itcpet.png",
+    ],
+  },
+  {
     name: "Profolio",
     description: "Portfolio generator with customizable templates.",
     live: "https://profolio-app.vercel.app/",
@@ -31,7 +43,7 @@ export const projects: IProject[] = [
     live: "https://e-leads.vercel.app",
     github: "https://github.com/vansh-vm04/e-Leads",
     skills: ["Next.js", "TypeScript", "Zod", "Prisma", "PostgreSQL"],
-    featured: true,
+    featured: false,
     images: [
       "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565075/Screenshot_2026-02-08_204257_xi3avt.png",
       "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565075/Screenshot_2026-02-08_204352_cgqcuk.png",
@@ -43,7 +55,7 @@ export const projects: IProject[] = [
     live: "https://wetalk-app.vercel.app/",
     github: "https://github.com/vansh-vm04/WeTalk",
     skills: ["React", "TypeScript", "Node.js", "WebSockets"],
-    featured: true,
+    featured: false,
     images: [
       "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565075/Screenshot_2026-02-08_204811_qtoaia.png",
     ],
@@ -55,7 +67,7 @@ export const projects: IProject[] = [
     live: "https://easy-summary.vercel.app/",
     github: "https://github.com/vansh-vm04/AI-Summarizer",
     skills: ["TypeScript", "Next.js", "Express.js", "Groq API"],
-    featured: true,
+    featured: false,
     images: [
       "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565099/Screenshot_2026-02-08_204208_e3fhd6.png",
       "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565258/Screenshot_2026-02-08_211041_uttia5.png",
@@ -105,6 +117,10 @@ export const skills: ISkill[] = [
   // Frontend
   {
     name: "React.js",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  },
+  {
+    name: "React Native",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
   },
   {
