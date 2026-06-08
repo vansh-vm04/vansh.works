@@ -16,16 +16,18 @@ export const links = {
 
 export const projects: IProject[] = [
   {
-    name: "DayONE (In Progress)",
+    name: "DayONE",
     description:
       "All-in-one productivity app for tasks, habits, notes, and reminders.",
-    live: "https://github.com/vansh-vm04/productivity-app",
     github: "https://github.com/vansh-vm04/productivity-app",
     skills: ["React Native", "Expo", "TypeScript", "SQLite"],
     featured: true,
     images: [
-      "https://res.cloudinary.com/dhuql3iuv/image/upload/v1778965615/Gemini_Generated_Image_gn8cgrgn8cgrgn8c_itcpet.png",
+      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1780887435/dayone-banner-2_dizkj6.png",
+      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1780887434/dayone-banner-3_cahfvv.png",
+      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1780887433/dayone-banner-4_rnznl7.png"
     ],
+    download: "https://github.com/vansh-vm04/productivity-app/releases/download/v1.0.0/DayONE-v1.0.0.apk"
   },
   {
     name: "Profolio",
@@ -150,6 +152,10 @@ export const skills: ISkill[] = [
   {
     name: "Express.js",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+  },
+  {
+    name: "NestJS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg",
   },
   {
     name: "MongoDB",

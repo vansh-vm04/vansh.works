@@ -34,7 +34,7 @@ export default async function GithubActivity() {
         theme={gitHubTheme}
         colorScheme={"dark"}
         maxLevel={4}
-        blockSize={9.66}
+        blockSize={11.41}
         blockMargin={2}
         style={{ color: "white", fontFamily: "monospace" }}
       />

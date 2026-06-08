@@ -58,7 +58,10 @@ function ImageSlider({ images, name }: { images: string[]; name: string }) {
         style={{ transform: `translateX(-${current * 100}%)` }}
       >
         {images.map((img, i) => (
-          <div key={i} className="w-full flex-shrink-0 relative aspect-video flex items-center justify-center">
+          <div
+            key={i}
+            className="w-full flex-shrink-0 relative aspect-video flex items-center justify-center"
+          >
             <Image
               src={img}
               alt={`${name} screenshot ${i + 1}`}
@@ -77,20 +80,46 @@ function ImageSlider({ images, name }: { images: string[]; name: string }) {
       {images.length > 1 && (
         <>
           <button
-            onClick={(e) => { e.preventDefault(); prev(); }}
+            onClick={(e) => {
+              e.preventDefault();
+              prev();
+            }}
             className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white rounded-full w-7 h-7 flex items-center justify-center opacity-0 group-hover/slider:opacity-100 transition-opacity duration-200 backdrop-blur-sm"
             aria-label="Previous image"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
               <path d="m15 18-6-6 6-6" />
             </svg>
           </button>
           <button
-            onClick={(e) => { e.preventDefault(); next(); }}
+            onClick={(e) => {
+              e.preventDefault();
+              next();
+            }}
             className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 hover:bg-black/80 text-white rounded-full w-7 h-7 flex items-center justify-center opacity-0 group-hover/slider:opacity-100 transition-opacity duration-200 backdrop-blur-sm"
             aria-label="Next image"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            >
               <path d="m9 18 6-6-6-6" />
             </svg>
           </button>
@@ -132,7 +161,10 @@ export default function ProjectCard({ project }: { project: IProject }) {
                 <div
                   key={idx}
                   className="group/skill relative w-7 h-7 rounded-full bg-zinc-800 border-2 border-zinc-900 flex items-center justify-center hover:scale-125 hover:z-20 transition-transform duration-200 cursor-default"
-                  style={{ marginLeft: idx === 0 ? 0 : "-6px", zIndex: project.skills.length - idx }}
+                  style={{
+                    marginLeft: idx === 0 ? 0 : "-6px",
+                    zIndex: project.skills.length - idx,
+                  }}
                 >
                   {iconUrl ? (
                     <Image
@@ -158,29 +190,58 @@ export default function ProjectCard({ project }: { project: IProject }) {
 
           {/* Action links */}
           <div className="flex items-center gap-2">
-            <a
-              href={project.live}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-8 h-8 flex items-center justify-center rounded-lg bg-zinc-800 hover:bg-zinc-700 transition-colors group/link"
-              title="Live demo"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="15"
-                height="15"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="text-zinc-400 group-hover/link:text-white transition-colors"
+            {project.live && (
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 flex items-center justify-center rounded-lg bg-zinc-800 hover:bg-zinc-700 transition-colors group/link"
+                title="Live demo"
               >
-                <path d="M7 7h10v10" />
-                <path d="M7 17 17 7" />
-              </svg>
-            </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-zinc-400 group-hover/link:text-white transition-colors"
+                >
+                  <path d="M7 7h10v10" />
+                  <path d="M7 17 17 7" />
+                </svg>
+              </a>
+            )}
+
+            {project.download && (
+              <a
+                href={project.download}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-8 h-8 flex items-center justify-center rounded-lg bg-zinc-800 hover:bg-zinc-700 transition-colors group/link"
+                title="Download"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="15"
+                  height="15"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="text-zinc-400 group-hover/link:text-white transition-colors"
+                >
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                  <polyline points="7 10 12 15 17 10" />
+                  <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+              </a>
+            )}
             <a
               href={project.github}
               target="_blank"

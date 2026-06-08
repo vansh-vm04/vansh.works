@@ -1,11 +1,12 @@
 export interface IProject {
   name: string;
   description: string;
-  live: string;
+  live?: string;
   github: string;
   skills: string[];
   featured: boolean;
   images?: string[];
+  download?: string;
 }
 
 export interface IQuote {
