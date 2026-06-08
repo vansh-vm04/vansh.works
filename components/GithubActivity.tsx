@@ -23,7 +23,7 @@ export default async function GithubActivity() {
 
   return (
     <section id="github-activity" className="w-full my-6">
-      <h1 className="text-white text-lg font-medium mb-2">Github Activity</h1>
+      <h1 className="text-white text-xl font-medium mb-2">Github Activity</h1>
       <div className="github-calendar-wrapper">
       <Calendar
         weekStart={0}

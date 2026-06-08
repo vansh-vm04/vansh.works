@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Education() {
   return (
     <section id="education" className="w-full my-6">
-      <h1 className="text-white text-lg font-medium mb-2">Education</h1>
+      <h1 className="text-white text-xl font-medium mb-2">Education</h1>
       <div className="flex flex-col gap-3">
         {educations.map((education) => (
           <div key={education.institution} className="w-full">

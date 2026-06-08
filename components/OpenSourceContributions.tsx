@@ -4,7 +4,7 @@ import { openSourceContributions } from "@/utils/data";
 export default function OpenSourceContributions() {
   return (
     <section id="oss-contributions" className="w-full my-6">
-      <h1 className="text-white text-lg font-medium mb-2">
+      <h1 className="text-white text-xl font-medium mb-2">
         Open Source Contributions
       </h1>
       <div className="space-y-3">

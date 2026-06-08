@@ -142,12 +142,12 @@ export default function ProjectCard({ project }: { project: IProject }) {
       {/* Content */}
       <div className="flex flex-col flex-1 p-4 pt-3">
         {/* Title */}
-        <h3 className="text-white font-semibold text-base mb-1">
+        <h3 className="text-white font-semibold text-lg mb-1">
           {project.name}
         </h3>
 
         {/* Description */}
-        <p className="text-zinc-400 text-sm leading-relaxed mb-4 line-clamp-2">
+        <p className="text-zinc-400 text-md leading-relaxed mb-4 line-clamp-2">
           {project.description}
         </p>
 

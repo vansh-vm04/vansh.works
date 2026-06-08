@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function Skills() {
   return (
     <section id="skills" className="w-full my-6">
-      <h1 className="text-white text-lg font-medium mb-2">Engineering Toolkit</h1>
+      <h1 className="text-white text-xl font-medium mb-2">Engineering Toolkit</h1>
       <div className="flex gap-y-1 gap-1 flex-wrap w-full">
         {skills.map((skill, idx) => (
           <div
@@ -12,13 +12,13 @@ export default function Skills() {
             key={idx}
           >
             <Image
-              className="size-4"
-              width={16}
-              height={16}
+              className="size-5"
+              width={20}
+              height={20}
               alt={skill.name}
               src={skill.icon}
             />
-            <span className="text-white font-mono text-xs">{skill.name}</span>
+            <span className="text-white font-mono text-sm">{skill.name}</span>
           </div>
         ))}
       </div>
