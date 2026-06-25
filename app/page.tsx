@@ -5,7 +5,6 @@ import GithubActivity from "@/components/GithubActivity";
 import Introduction from "@/components/Introduction";
 import OpenSourceContributions from "@/components/OpenSourceContributions";
 import Projects from "@/components/Projects";
-import RandomQuotes from "@/components/RandomQuotes";
 import Skills from "@/components/Skills";
 
 export default function Home() {
@@ -18,7 +17,6 @@ export default function Home() {
       <GithubActivity />
       <OpenSourceContributions />
       <Education />
-      <RandomQuotes />
       <Contact />
     </div>
   );

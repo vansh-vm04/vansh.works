@@ -9,7 +9,7 @@ import {
 export const links = {
   github: "https://github.com/vansh-vm04",
   linkedin: "https://www.linkedin.com/in/vanshmorwani",
-  mail: "mailto:contact@vansh.works",
+  mail: "mailto:vanshmorwani1@gmail.com",
   resume:
     "https://drive.google.com/file/d/1Oi5-eQyS2wuxssXgrPspljXgKEy41V7M/view?usp=sharing",
 };
@@ -204,10 +204,23 @@ export const experiences: IExperience[] = [
     location: "Bangalore, India (Remote)",
     logo: "https://res.cloudinary.com/dhuql3iuv/image/upload/v1772828265/Screenshot_2026-03-07_014549_acf8kk.png",
     responsibilities: [
-      "Built UI components for a mobile application using React Native, focusing on reusable components and responsive layouts.",
-      "Integrated backend APIs using NestJS to enable communication between frontend and backend services.",
-      "Developed frontend features using React, improving functionality and user experience of the web application.",
-      "Integrated third-party APIs to support additional application features.",
+      "Developed features for a React Native mobile app used by paid users, improving the overall user experience.",
+      "Improved API performance through caching and query optimization, reducing response time.",
+      "Integrated third-party payment APIs to enable seamless payments across multiple countries and currencies.",
+      "Built admin panel features with role-based access control (RBAC) and content management, improving security and simplifying administration.",
+    ],
+  },
+  {
+    company: "Upwork",
+    role: "Freelance Software Engineer",
+    duration: "Aug 2025 – Oct 2025",
+    location: "Remote",
+    logo: "https://res.cloudinary.com/dd2jupzdn/image/upload/v1782360715/upwork_logo_zycqsm.jpg",
+    responsibilities: [
+      "Built 3+ e-commerce web applications tailored to client requirements.",
+      "Delivered projects faster using AI-assisted development and deployed applications with Vercel.",
+      "Resolved production bugs and improved application performance and reliability.",
+      "Integrated SendGrid and Amazon SES to enable email services in client projects.",
     ],
   },
 ];
