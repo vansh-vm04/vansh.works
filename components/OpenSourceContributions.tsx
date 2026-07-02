@@ -24,7 +24,10 @@ export default function OpenSourceContributions() {
           );
 
           return (
-            <div
+            <a
+              href={contribution.repoLink}
+              target="_blank"
+              rel="noopener noreferrer"
               key={idx}
               className="group flex flex-row items-start gap-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-gradient-to-b from-zinc-100/70 to-white/95 dark:from-zinc-800/70 dark:to-zinc-900/95 p-3 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-200 shadow-[inset_0_1px_0_rgba(0,0,0,0.04)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] sm:flex-row sm:items-center"
             >
@@ -60,7 +63,7 @@ export default function OpenSourceContributions() {
                   → PR #{contribution.prNumber}
                 </a>
               </div>
-            </div>
+            </a>
           );
         })}
       </div>
