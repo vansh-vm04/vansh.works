@@ -1,5 +1,9 @@
+"use client";
+
 import { ApiResponse, Contribution } from "@/utils/types";
 import Calendar, { type ThemeInput } from "react-activity-calendar";
+import { useTheme } from "next-themes";
+import { useEffect, useState } from "react";
 
 const GITHUB_USERNAME = "vansh-vm04";
 
@@ -17,13 +21,21 @@ const fetchGitHubData = async (): Promise<ApiResponse> => {
   }
 };
 
-export default async function GithubActivity() {
-  const data = await fetchGitHubData();
+export default function GithubActivity() {
+  const { resolvedTheme } = useTheme();
+  const [data, setData] = useState<ApiResponse | null>(null);
+
+  useEffect(() => {
+    fetchGitHubData().then(setData);
+  }, []);
+
+  if (!data) return null;
+
   const { totalCommits, filteredData } = transformData(data.contributions);
 
   return (
     <section id="github-activity" className="w-full my-6">
-      <h1 className="text-white text-xl font-medium mb-2">Github Activity</h1>
+      <h1 className="text-zinc-900 dark:text-white text-xl font-medium mb-2">Github Activity</h1>
       <div className="github-calendar-wrapper">
       <Calendar
         weekStart={0}
@@ -32,11 +44,11 @@ export default async function GithubActivity() {
         hideMonthLabels
         totalCount={totalCommits}
         theme={gitHubTheme}
-        colorScheme={"dark"}
+        colorScheme={resolvedTheme === "dark" ? "dark" : "light"}
         maxLevel={4}
         blockSize={11.41}
         blockMargin={2}
-        style={{ color: "white", fontFamily: "monospace" }}
+        style={{ color: resolvedTheme === "dark" ? "white" : "#18181b", fontFamily: "monospace" }}
       />
       </div>
     </section>

@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export function BackButton({ link }: { link: string }) {
   return (
-    <Link className="flex items-center gap-1 text-zinc-400 text-md italic" href={link}>
+    <Link className="flex items-center gap-1 text-zinc-600 dark:text-zinc-400 text-md italic" href={link}>
       <svg
-        className="stroke-zinc-400 size-4 stroke-[1.5]"
+        className="stroke-zinc-600 dark:stroke-zinc-400 size-4 stroke-[1.5]"
         fill="none"
         height="24"
         viewBox="0 0 24 24"

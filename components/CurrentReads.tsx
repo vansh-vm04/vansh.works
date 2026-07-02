@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function CurrentReads() {
   return (
     <section id="reading" className="w-full my-4">
-      <h1 className="text-white text-lg font-medium mb-2">What I’m Reading</h1>
+      <h1 className="text-zinc-900 dark:text-white text-lg font-medium mb-2">What I’m Reading</h1>
       <div className="w-full h-fit overflow-hidden">
         <div
           className={`flex items-center gap-1 book-slide h-full hover:pause-scroll transform-3d transition-all`}

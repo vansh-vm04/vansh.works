@@ -10,7 +10,6 @@ export default function LoadingScreen({
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Only wait for critical images (ones with fetchpriority="high" set by Next.js priority prop)
     const checkCriticalImages = () => {
       const criticalImages = document.querySelectorAll(
         'img[fetchpriority="high"]'
@@ -34,7 +33,6 @@ export default function LoadingScreen({
       Promise.all(imagePromises).then(() => setIsLoading(false));
     };
 
-    // Check immediately, then set a max timeout as fallback
     checkCriticalImages();
     const maxTimeout = setTimeout(() => setIsLoading(false), 2000);
 
@@ -44,9 +42,9 @@ export default function LoadingScreen({
   return (
     <>
       {isLoading && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black">
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-white dark:bg-black">
           <div className="flex flex-col items-center gap-4">
-            <div className="w-10 h-10 border-4 border-zinc-700 border-t-white rounded-full animate-spin" />
+            <div className="w-10 h-10 border-4 border-zinc-200 dark:border-zinc-700 border-t-zinc-900 dark:border-t-white rounded-full animate-spin" />
           </div>
         </div>
       )}
