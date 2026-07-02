@@ -10,9 +10,9 @@ export default function Introduction() {
       <div className="flex flex-col w-full">
         <h1 className="text-white text-2xl font-bold mb-1">Hey👋, I’m Vansh</h1>
         <p className="text-zinc-400 leading-tight text-pretty font-mono text-[0.95rem] max-sm:text-sm">
-          a full-stack developer who builds web and mobile applications end to end. i enjoy
+          A full-stack developer who builds web and mobile applications end to end. I enjoy
           turning ideas into scalable products, from crafting intuitive user
-          experiences to developing reliable APIs and backend systems. when I&apos;m
+          experiences to developing reliable APIs and backend systems. When I&apos;m
           not coding, you&apos;ll find me reading, playing chess, or hanging out with
           friends.
         </p>
