@@ -25,7 +25,7 @@ export default function OpenSourceContributions() {
 
           return (
             <a
-              href={contribution.repoLink}
+              href={contribution.prLink}
               target="_blank"
               rel="noopener noreferrer"
               key={idx}
