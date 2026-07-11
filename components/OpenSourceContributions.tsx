@@ -32,14 +32,11 @@ export default function OpenSourceContributions() {
               className="group flex flex-row items-start gap-3 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-gradient-to-b from-zinc-100/70 to-white/95 dark:from-zinc-800/70 dark:to-zinc-900/95 p-3 hover:border-zinc-300 dark:hover:border-zinc-700 transition-all duration-200 shadow-[inset_0_1px_0_rgba(0,0,0,0.04)] dark:shadow-[inset_0_1px_0_rgba(255,255,255,0.04)] sm:flex-row sm:items-center"
             >
               {contribution.repoLink ? (
-                <a
-                  href={contribution.repoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <div
                   className="relative flex h-10 w-10 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/70 transition-colors hover:border-zinc-300 dark:hover:border-zinc-700"
                 >
                   {iconContent}
-                </a>
+                </div>
               ) : (
                 <div className="relative flex h-10 w-10 items-center justify-center rounded-lg border border-zinc-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/70 shrink-0">
                   {iconContent}
@@ -54,14 +51,11 @@ export default function OpenSourceContributions() {
                     {contribution.description}
                   </p>
                 </div>
-                <a
-                  href={contribution.prLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <div
                   className="text-blue-600 dark:text-blue-400 hover:text-blue-500 dark:hover:text-blue-300 text-[11px] sm:text-xs font-mono transition-colors sm:shrink-0"
                 >
                   → PR #{contribution.prNumber}
-                </a>
+                </div>
               </div>
             </a>
           );

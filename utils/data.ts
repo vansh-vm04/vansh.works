@@ -165,11 +165,19 @@ export const skills: ISkill[] = [
     name: "PostgreSQL",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
   },
+  {
+    name: "Redis",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg",
+  },
 
   // DevOps
   {
     name: "Docker",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+  },
+  {
+    name: "AWS",
+    icon: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/amazonwebservices.svg",
   },
 
   // Tools & Others
@@ -184,6 +192,10 @@ export const skills: ISkill[] = [
   {
     name: "Postman",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
+  },
+  {
+    name: "Stripe Payments",
+    icon: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stripe.svg",
   },
 ];
 
