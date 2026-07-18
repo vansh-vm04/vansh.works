@@ -9,7 +9,7 @@ import LoadingScreen from "@/components/LoadingScreen";
 import ThemeToggle from "@/components/ThemeToggle";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://vansh.works"),
+  metadataBase: new URL("https://vanshmorwani.com"),
   title: "Vansh Morwani",
   description: "Vansh Morwani | Full Stack Developer",
   icons: {
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     title: "Vansh Morwani | Full Stack Developer",
     description:
       "Full Stack Developer focused on backend development, MERN stack, and modern web applications.",
-    url: "https://vansh.works",
+    url: "https://vanshmorwani.com",
     siteName: "Vansh Morwani",
     images: [
       {

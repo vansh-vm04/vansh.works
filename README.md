@@ -1,3 +1,3 @@
-## [vansh.works](https://vansh.works)
+## [vanshmorwani.com](https://vanshmorwani.com)
 
 ### my space on the internet.
