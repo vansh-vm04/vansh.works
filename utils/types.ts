@@ -35,6 +35,7 @@ export interface IExperience {
   location: string;
   logo: string;
   responsibilities: string[];
+  skills?: string[];
 }
 
 export interface IEducation {

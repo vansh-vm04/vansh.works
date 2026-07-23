@@ -139,16 +139,8 @@ export const skills: ISkill[] = [
     name: "Redux",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
   },
-  {
-    name: "Tailwind CSS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-  },
 
   // Backend & APIs
-  {
-    name: "Node.js",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-  },
   {
     name: "Express.js",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
@@ -178,6 +170,10 @@ export const skills: ISkill[] = [
   {
     name: "AWS",
     icon: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/amazonwebservices.svg",
+  },
+  {
+    name: "Azure DevOps",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azuredevops/azuredevops-original.svg",
   },
 
   // Tools & Others
@@ -217,8 +213,9 @@ export const experiences: IExperience[] = [
     company: "BetaTest Solutions",
     role: "Software Engineer Intern",
     duration: "Nov 2025 – June 2026",
-    location: "Bangalore, India (Remote)",
+    location: "Bangalore, India",
     logo: "https://res.cloudinary.com/dhuql3iuv/image/upload/v1772828265/Screenshot_2026-03-07_014549_acf8kk.png",
+    skills: ["React", "React Native", "NestJS", "TypeScript", "MariaDB", "Redis", "Azure DevOps", "Stripe Payments", "Bruno"],
     responsibilities: [
       "Developed features for a React Native mobile app used by paid users, improving the overall user experience.",
       "Improved API performance through caching and query optimization, reducing response time.",
@@ -232,6 +229,7 @@ export const experiences: IExperience[] = [
     duration: "Aug 2025 – Oct 2025",
     location: "Remote",
     logo: "https://res.cloudinary.com/dd2jupzdn/image/upload/v1782360715/upwork_logo_zycqsm.jpg",
+    skills: ["React", "Next.js", "Express.js", "Vercel", "Postman", "AWS"],
     responsibilities: [
       "Built 3+ e-commerce web applications tailored to client requirements.",
       "Delivered projects faster using AI-assisted development and deployed applications with Vercel.",
