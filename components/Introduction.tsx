@@ -8,7 +8,7 @@ export default function Introduction() {
   return (
     <section id="about" className="flex justify-center gap-6 items-center my-6">
       <div className="flex flex-col w-full">
-        <h1 className="text-zinc-900 dark:text-white text-md font-bold mb-1 flex items-center gap-2 sm:text-2xl text-nowrap">
+        <h1 className="text-zinc-900 dark:text-white text-lg font-bold mb-1 flex items-center gap-2 sm:text-2xl text-nowrap">
           Hey👋, I’m Vansh
           <span className="sm:text-[0.8rem] text-[0.5rem] font-medium bg-zinc-500/20 text-black dark:text-white ml-2 px-2.5 py-1 rounded-md flex items-center gap-1.5 text-nowrap">
             <span className="size-1.5 rounded-full bg-green-500 dark:bg-green-400 animate-pulse shadow-green-500 shadow-[0_0_6px_#4ade80]" />
@@ -40,8 +40,8 @@ export default function Introduction() {
         <figure>
           <Image
             className="rounded-md object-cover border-2 border-zinc-300 dark:border-zinc-500"
-            height={144}
-            width={144}
+            height={148}
+            width={148}
             alt="Vansh Morwani"
             src={"/images/vansh-morwani.jpg"}
             priority

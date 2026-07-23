@@ -194,6 +194,10 @@ export const skills: ISkill[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postman/postman-original.svg",
   },
   {
+    name: "Bruno",
+    icon: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/bruno.svg",
+  },
+  {
     name: "Stripe Payments",
     icon: "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/stripe.svg",
   },

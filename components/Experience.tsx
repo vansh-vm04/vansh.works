@@ -42,8 +42,14 @@ export default function Experience() {
                     <h2 className="text-zinc-900 dark:text-white font-semibold text-sm sm:text-base">{exp.company}</h2>
                     <p className="text-zinc-600 dark:text-zinc-400 font-mono text-xs sm:text-sm">{exp.role}</p>
                   </div>
-                  <div className="text-right shrink-0 items-start flex">
-                    <span className="text-zinc-700 dark:text-zinc-300 font-mono text-[10px] sm:text-sm whitespace-nowrap">{exp.duration}</span>
+                  <div className="text-right shrink-0 items-start flex flex-col">
+                    <span className="text-zinc-700 dark:text-zinc-300 font-mono text-[10px] sm:text-[13px] whitespace-nowrap justify-end w-full">{exp.duration}</span>
+                    <span className="text-zinc-500 dark:text-zinc-500 font-mono text-[10px] sm:text-[13px] whitespace-nowrap mt-0.5 flex items-center gap-0.5 justify-end w-full">
+                      <svg className="size-3 stroke-zinc-500 shrink-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                        <circle cx="12" cy="10" r="3" />
+                      </svg>
+                      {exp.location}</span>
                   </div>
                 </div>
               </div>
