@@ -24,7 +24,7 @@ export default function Experience() {
           return (
             <div key={index}>
               <div
-                className="flex items-start gap-2 md:items-center sm:gap-3 cursor-pointer sm:cursor-pointer"
+                className="flex items-start gap-2 md:items-center sm:gap-3 cursor-pointer sm:cursor-pointer group"
                 onClick={() => toggleExpand(index)}
               >
                 <Image
@@ -39,7 +39,7 @@ export default function Experience() {
                     <div className="min-w-0">
                       <h2 className="text-zinc-900 dark:text-white font-semibold text-sm sm:text-base flex items-center gap-1.5">
                         {exp.company}
-                        <svg className={`size-3.5 stroke-zinc-500 transition-transform duration-300 ${isOpen ? "rotate-90" : ""}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <svg className={`size-3.5 stroke-zinc-400 transition-all duration-300 group-hover:stroke-zinc-900 dark:group-hover:stroke-white group-hover:translate-x-0.5 ${isOpen ? "rotate-90" : ""}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                           <path d="m9 18 6-6-6-6" />
                         </svg>
                       </h2>
