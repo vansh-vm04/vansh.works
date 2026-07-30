@@ -94,21 +94,6 @@ export const projects: IProject[] = [
       "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565073/Screenshot_2026-02-08_210629_tc9sqf.png",
     ],
   },
-  {
-    name: "Bakery Website",
-    description:
-      "A modern bakery website to explore cakes, browse categories, and place orders with a clean and responsive UI.",
-    live: "https://cakes-bakery.vercel.app",
-    github: "https://github.com/vansh-vm04/cake-site",
-    skills: ["React.js", "Tailwind CSS"],
-    featured: false,
-    images: [
-      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565075/Screenshot_2026-02-08_204502_hz8usb.png",
-      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565074/Screenshot_2026-02-08_204541_rkrjxr.png",
-      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565074/Screenshot_2026-02-08_204605_vkbx7q.png",
-      "https://res.cloudinary.com/dd2jupzdn/image/upload/v1770565073/Screenshot_2026-02-08_204646_ylg41z.png",
-    ],
-  },
 ];
 
 export const featuredProjects = projects.filter(
@@ -217,10 +202,10 @@ export const experiences: IExperience[] = [
     logo: "https://res.cloudinary.com/dhuql3iuv/image/upload/v1772828265/Screenshot_2026-03-07_014549_acf8kk.png",
     skills: ["React", "React Native", "NestJS", "TypeScript", "MariaDB", "Redis", "Azure DevOps", "Stripe Payments", "Bruno"],
     responsibilities: [
-      "Developed features for a React Native mobile app used by paid users, improving the overall user experience.",
-      "Improved API performance through caching and query optimization, reducing response time.",
-      "Integrated third-party payment APIs to enable seamless payments across multiple countries and currencies.",
-      "Built admin panel features with role-based access control (RBAC) and content management, improving security and simplifying administration.",
+      "Worked on a multi platform application including B2C mobile and web platforms and a B2B web platform using React, React Native, NestJS, and REST APIs in an Agile environment using Azure DevOps.",
+      "Integrated Stripe payment gateway for seamless payments and worked with Stripe Products and Invoices. Also integrated the Wise API for bank account registration and verification, supporting users across 160+ countries.",
+      "Built multiple end to end features by planning database structure, developing REST APIs, building frontend screens, and improving API response time using Redis caching across the application.",
+      "Implemented an API Gateway to manage authentication for 4 platforms through a single token issuer and added JWT refresh token functionality for secure user and admin authentication.",
     ],
   },
   {
@@ -231,10 +216,9 @@ export const experiences: IExperience[] = [
     logo: "https://res.cloudinary.com/dd2jupzdn/image/upload/v1782360715/upwork_logo_zycqsm.jpg",
     skills: ["React", "Next.js", "Express.js", "Vercel", "Postman", "AWS"],
     responsibilities: [
-      "Built 3+ e-commerce web applications tailored to client requirements.",
-      "Delivered projects faster using AI-assisted development and deployed applications with Vercel.",
-      "Resolved production bugs and improved application performance and reliability.",
-      "Integrated SendGrid and Amazon SES to enable email services in client projects.",
+      "Built and improved 5+ customer facing web features using React.js, TypeScript, and Node.js, created reusable components, integrated REST APIs, fixed bugs, and worked in an Agile development environment.",
+      "Fixed 10+ production issues across frontend and backend by debugging code, improving SQL queries, optimizing application performance, and improving the overall user experience.",
+      "Integrated Amazon SES and SendGrid with backend REST APIs to send 10,000+ transactional emails, build emailservices, and support production features across the application.",
     ],
   },
 ];

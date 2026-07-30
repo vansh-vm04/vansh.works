@@ -2,21 +2,7 @@
 
 import { useState, useCallback, useEffect } from "react";
 import { IProject } from "@/utils/types";
-import { skills as allSkills } from "@/utils/data";
 import Image from "next/image";
-
-const skillAliases: Record<string, string> = {
-  React: "React.js",
-  "Node.js": "Node.js",
-};
-
-function getSkillIcon(skillName: string): string | null {
-  const lookup = skillAliases[skillName] || skillName;
-  const found = allSkills.find(
-    (s) => s.name.toLowerCase() === lookup.toLowerCase(),
-  );
-  return found?.icon || null;
-}
 
 function ImageSlider({ images, name }: { images: string[]; name: string }) {
   const [current, setCurrent] = useState(0);
@@ -144,37 +130,15 @@ export default function ProjectCard({ project }: { project: IProject }) {
         </p>
 
         <div className="flex items-center justify-between mt-auto">
-          <div className="flex items-center">
-            {project.skills.map((skill, idx) => {
-              const iconUrl = getSkillIcon(skill);
-              return (
-                <div
-                  key={idx}
-                  className="group/skill relative w-7 h-7 rounded-full bg-zinc-100 dark:bg-zinc-800 border-2 border-white dark:border-zinc-900 flex items-center justify-center hover:scale-125 hover:z-20 transition-transform duration-200 cursor-default"
-                  style={{
-                    marginLeft: idx === 0 ? 0 : "-6px",
-                    zIndex: project.skills.length - idx,
-                  }}
-                >
-                  {iconUrl ? (
-                    <Image
-                      src={iconUrl}
-                      alt={skill}
-                      width={16}
-                      height={16}
-                      className="rounded-full"
-                    />
-                  ) : (
-                    <span className="text-[9px] font-bold text-zinc-600 dark:text-zinc-300">
-                      {skill.slice(0, 2)}
-                    </span>
-                  )}
-                  <span className="pointer-events-none absolute top-full mt-2 left-1/2 -translate-x-1/2 whitespace-nowrap bg-zinc-100 dark:bg-zinc-800 text-zinc-800 dark:text-zinc-100 text-[11px] font-medium px-2.5 py-1 rounded-lg border border-zinc-200 dark:border-zinc-700 shadow-lg shadow-black/10 dark:shadow-black/30 opacity-0 scale-90 group-hover/skill:opacity-100 group-hover/skill:scale-100 transition-all duration-200 origin-top z-50">
-                    {skill}
-                  </span>
-                </div>
-              );
-            })}
+          <div className="flex flex-wrap gap-1.5">
+            {project.skills.map((skill, idx) => (
+              <span
+                key={idx}
+                className="text-[11px] font-medium text-zinc-600 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-800 px-2 py-0.5 rounded-md border border-zinc-200 dark:border-zinc-700"
+              >
+                {skill}
+              </span>
+            ))}
           </div>
 
           <div className="flex items-center gap-2">
